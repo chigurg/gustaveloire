@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	top: 0;
+	font-family: 'Roboto', serif;
+	font-weight: 400;
+	background-color: white;
+	height: 100rem;
+	
+}
+
+header {
+	background: rgba(167,219,220,1.00);
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 8fr 8fr 1fr;
+	
+}
+
+.pad {
+	background: red;
+	opacity: .3;
+	max-height: 85px;
+}
+
+.logo {
+	background: rgba(163,143,198,.5);
+	color: white;
+	text-align: left;
+	text-overflow: clip;
+	white-space: nowrap;
+	max-height: 85px;
+}
+
+nav {
+	text-align: right;
+	max-height: 85px;
+	vertical-align: text-top;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav li ul {
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+nav li ul a {
+	text-decoration: none;
+	color: white;
+	line-height: 25px;
+	}
+
+nav li ul a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: minmax(150px 25%) auto minmax(150px 25%);
+}
+
+@media screen and (max-width: 1000px) {
+	nav {
+		position: absolute;
+		right: 0;
+		z-index: 999;
+		top: 85px;
+		background: rgba(0,0,0,0.79);
+		width: 100%;
+		padding-bottom: 50rem;
+		backdrop-filter:blur (10px);
+				
+	}
+	
+	nav li ul a {
+	text-decoration: none;
+	color: white;
+	padding: 3%;
+	font-size: 58px;
+	}
+	
+	
+	
+
+	
+	
+}
