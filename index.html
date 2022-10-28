@@ -2,41 +2,38 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HOME</title>
 	<link rel="stylesheet" href="css/styles.css" >
+	<script src="js/nav.js" defer></script>
 </head>
 
 <!--------BODDYYY--------->
 <body>
 	<header>
-		<div class="pad"></div>
 		<div class="logo">
 			<h1>Gustave Loire</h1>
 		</div>
+
+		<button class="mobile-nav-toggle">
+			<span class="sr-only">{menu}</span>
+		</button>
+
 		<nav>
-			<li>
-				<ul><a href="index.html">Home</a></ul>					
-				<ul><a href="projects.html">Projects</a></ul>
-				<ul><a href="about">About</a></ul>
-			</li>
+			<ul id="primary-navigation" data-visible="false" class="nav-list">
+				<li><a href="index.html">{Home}</a></li>					
+				<li><a href="projects.html">{Projects}</a></li>
+				<li><a href="about">{About}</a></li>
+			</ul>
 		</nav>
-		<div class="pad"></div>
+
 	</header>
 	
-	<div class="content">
-		<p style="font-size: 40px">Tekstje dat geblurrrrt mag zijn</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	<main>
+		<span> </span>
+		<p>Tekstje dat geblurrrrt mag zijn</p>
+		<span> </span>
+	</main>
+
 </body>
 </html>
