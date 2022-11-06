@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HOME</title>
 	<link rel="stylesheet" href="css/styles.css" >
-	<script src="js/nav.js" defer></script>
+	<script src="js/script.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-	<script src="js/carousel.js" defer></script>
+	
 </head>
 
 <!--------BODDYYY--------->
@@ -32,19 +32,26 @@
 	</header>
 	
 	<main>
-		<img src="images/guill2.jpg" alt="Guillotine 1">
-		<img src="images/guill1.jpg" alt="Guillotine 2">
-		<img src="images/scroll1.jpg" alt="Scroll">
-		<img src="images/scroll2.jpg" alt="Scroll">
-		<img src="images/scroll3.jpg" alt="Scroll">
-		<img src="images/scroll4.jpg" alt="Scroll">
+		<section aria-label="Newest Photos">
+			<div class="carousel" data-carousel>
+			  <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+			  <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+			  <ul data-slides>
+				<li class="slide" data-active><img src="images/cross.jpg" alt="NAAM"></li>
+				<li class="slide"><img src="images/guill1.jpg" alt="NAAM"></li>
+				<li class="slide"><img src="images/scroll1.jpg" alt="NAAM"></li>
+				<li class="slide"><img src="images/scroll2.jpg" alt="NAAM"></li>
+				<li class="slide"><img src="images/scroll3.jpg" alt="NAAM"></li>
+				<li class="slide"><img src="images/guill2.jpg" alt="NAAM"></li>
+			  </ul>
+			</div>
+		</section>
 
-		<div>
+		<div class="info">
 			<h3>name</h3>
 			<h4>information</h4>
 			<p>more information...</p>
 		</div>
-		
 	</main>
 
 	<footer>
