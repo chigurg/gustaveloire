@@ -6,6 +6,8 @@
 	<title>HOME</title>
 	<link rel="stylesheet" href="css/styles.css" >
 	<script src="js/nav.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="js/carousel.js" defer></script>
 </head>
 
 <!--------BODDYYY--------->
@@ -15,12 +17,12 @@
 			<h1>Gustave Loire</h1>
 		</div>
 
-		<button class="mobile-nav-toggle">
+		<button class="mobile-nav-toggle" id="menuButton">
 			<span class="sr-only">{menu}</span>
 		</button>
 
-		<nav>
-			<ul id="primary-navigation" data-visible="false" class="nav-list">
+		<nav class="navbar">
+			<ul class="primary-navigation nav-list" id="visibility">
 				<li><a href="index.html">{Home}</a></li>					
 				<li><a href="projects.html">{Projects}</a></li>
 				<li><a href="about">{About}</a></li>
@@ -30,10 +32,28 @@
 	</header>
 	
 	<main>
-		<span> </span>
-		<p>Tekstje dat geblurrrrt mag zijn</p>
-		<span> </span>
+		<img src="images/guill2.jpg" alt="Guillotine 1">
+		<img src="images/guill1.jpg" alt="Guillotine 2">
+		<img src="images/scroll1.jpg" alt="Scroll">
+		<img src="images/scroll2.jpg" alt="Scroll">
+		<img src="images/scroll3.jpg" alt="Scroll">
+		<img src="images/scroll4.jpg" alt="Scroll">
+
+		<div>
+			<h3>name</h3>
+			<h4>information</h4>
+			<p>more information...</p>
+		</div>
+		
 	</main>
+
+	<footer>
+		<div class="links">
+			<a href="projects.html">projects</a>
+			<a href="about.html">about</a>
+		</div>
+		<p>made by arvo</p>
+	</footer>
 
 </body>
 </html>

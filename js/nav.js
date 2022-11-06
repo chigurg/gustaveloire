@@ -1,13 +1,18 @@
-const primaryNav = document.querySelector("#primary-navigation")
-const navToggle = document.querySelector(".mobile-nav-toggle")
+const menu = document.getElementById('visibility');
+const menuButton = document.getElementById('menuButton');
 
-navToggle.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute('data-visible')
+let visible = false;
 
-    if (visibility === "false") {
-        primaryNav.setAttribute("data-visible", true);
-        console.log(visibility);
-    }
+function setVisState(){
+  if(visible == false){
+    gsap.to('.navbar', {y:0, duration: 0.1})
+    visible = true;
+  }
+  else{
+    gsap.to('.navbar', {y:-1200, duration: 0.1});
+    visible = false;
+  }
+}
 
-})
+menuButton.addEventListener('click', setVisState);
 
