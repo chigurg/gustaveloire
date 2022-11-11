@@ -1,0 +1,13 @@
+NOG TOE TE VOEGEN
+
+//CAROUSEL
+    - autoplay!
+        - autoplay stoppen op manual control of niet?
+    - instagram style balkjes bovenaan
+        - met progress indicator
+    - swipe om door te gaan
+        - eventlistener 'click' veranderen naar een eigen function (zijnde click OR swipeEvent)
+    - pijltjes wegdoen
+
+//INFORMATIE
+    - updaten
