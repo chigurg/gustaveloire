@@ -196,6 +196,7 @@ main {
 	cursor: pointer;
 	margin: 3px;
   }
+  
   .carousel-indicators span.active{
 	opacity: 1;
   }

@@ -116,7 +116,7 @@ document.querySelectorAll('.carousel-indicators span').forEach(item=>{
 });
 
 carousel.addEventListener('mouseover',()=>{
-    loop(false);
+    loop(true);
 })
 
 carousel.addEventListener('mouseout',()=>{
