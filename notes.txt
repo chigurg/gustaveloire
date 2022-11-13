@@ -2,12 +2,13 @@ NOG TOE TE VOEGEN
 
 //CAROUSEL
     - autoplay!
-        - autoplay stoppen op manual control of niet?
-    - instagram style balkjes bovenaan
-        - met progress indicator
+        - autoplay stoppen op manual control of niet? -> ZOALS INSTAGRAM
+    - instagram style balkjes onderaan -> check
+        - met progress indicator -> check
+            - indicator animation pauses on touch
     - swipe om door te gaan
         - eventlistener 'click' veranderen naar een eigen function (zijnde click OR swipeEvent)
-    - pijltjes wegdoen
+    - pijltjes wegdoen -> check
 
 //INFORMATIE
     - updaten

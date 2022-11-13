@@ -28,6 +28,7 @@ let carouselInner = document.querySelector('.carousel-inner');
 let prev = document.querySelector('.carousel-controls .prev');
 let next = document.querySelector('.carousel-controls .next');
 let slides =  document.querySelectorAll('.carousel-inner .carousel-item');
+let balkje = document.querySelector('.carousel-indicators');
 let totalSlides = slides.length;
 let step = 100 / totalSlides;
 let activeSlide = 0;
@@ -115,11 +116,13 @@ document.querySelectorAll('.carousel-indicators span').forEach(item=>{
     })
 });
 
-carousel.addEventListener('mouseover',()=>{
-    loop(true);
+/* IDEE IS OM TE STOPPEN MET LOOPEN OP TOUCHSTART ZOALS INSTAGRAM, DAN TOUCHEND --> PLAY
+carousel.addEventListener('touchstart',()=>{
+    loop(false);
 })
+*/
 
-carousel.addEventListener('mouseout',()=>{
+carousel.addEventListener('touchend',()=>{
     loop(true);
 })
 
@@ -175,3 +178,7 @@ function loop(status){
         clearInterval(time);
     }
 }
+
+
+
+var bol = document.querySelector(".bol");
